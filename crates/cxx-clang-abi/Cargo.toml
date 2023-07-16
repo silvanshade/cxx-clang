@@ -1,0 +1,20 @@
+[package]
+edition = "2021"
+name = "cxx-clang-abi"
+version = "0.0.0"
+authors = ["silvanshade <silvanshade@users.noreply.github.com>"]
+license = "Apache-2.0 WITH LLVM-exception"
+repository = "https://github.com/silvanshade/cxx-clang"
+# NOTE: `links` is needed so that `cxx/include/**/*.hxx` is exported to dependencies
+links = "cxx-clang-abi"
+
+[build-dependencies]
+cxx-build = { version = "1.0", features = ["parallel"] }
+cxx-llvm-common = { version = "0.0", path = "../../../cxx-llvm-common" }
+cxx-memory-abi = { version = "0.0", path = "../../../cxx-memory-abi" }
+normpath = "1.1"
+
+[dependencies]
+cxx = { version = "1.0", features = ["c++20"] }
+cxx-llvm-common = { version = "0.0", path = "../../../cxx-llvm-common" }
+cxx-memory-abi = { version = "0.0", path = "../../../cxx-memory-abi" }

@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/ASTContext.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::ast_context",
+  "cxx_name": "ASTContext",
+  "rust_name": "AstContext",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}
