@@ -82,3 +82,13 @@ cxx_destruct(F* This [[clang::lifetimebound]]) -> void
 }
 
 } // namespace cxx_clang::clang::ast::named_decl
+
+namespace cxx_clang::clang::ast::named_decl {
+[[nodiscard]] [[gnu::always_inline]]
+static inline auto
+as_ref_decl(F const& This [[clang::lifetimebound]]) -> ::clang::Decl const&
+{
+  return This;
+}
+
+} // namespace cxx_clang::clang::ast::named_decl
