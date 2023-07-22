@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/Lex/MacroInfo/ModuleMacro.hxx",
+  "cxx_namespace": "cxx_clang::clang::lex::macro_info::module_macro",
+  "rust_name": "ModuleMacro",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

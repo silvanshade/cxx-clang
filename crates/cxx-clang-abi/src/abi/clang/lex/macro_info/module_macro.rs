@@ -1,10 +1,9 @@
 #![doc = r" NOTE: This module is auto-generated and should not be edited."]
-pub mod module_macro;
 #[cxx::bridge]
 mod ffi {
-    #[namespace = "cxx_clang::clang::lex::macro_info"]
+    #[namespace = "cxx_clang::clang::lex::macro_info::module_macro"]
     unsafe extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/Lex/MacroInfo.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/Lex/MacroInfo/ModuleMacro.hxx");
         fn cxx_abi_align() -> usize;
         fn cxx_abi_size() -> usize;
         fn cxx_is_copy_constructible() -> bool;
@@ -18,12 +17,12 @@ mod ffi {
 }
 pub use ffi::*;
 fn artifact_info() -> ::cxx_memory_abi::CxxAbiArtifactInfo {
-    let path_components = vec!["clang", "lex", "macro_info"];
-    let path_descendants = vec!["module_macro"];
-    let cxx_include = "cxx-clang-abi/cxx/include/clang/Lex/MacroInfo.hxx";
-    let cxx_namespace = "cxx_clang::clang::lex::macro_info";
-    let cxx_name = "MacroInfo";
-    let rust_name = "MacroInfo";
+    let path_components = vec!["clang", "lex", "macro_info", "module_macro"];
+    let path_descendants = vec![];
+    let cxx_include = "cxx-clang-abi/cxx/include/clang/Lex/MacroInfo/ModuleMacro.hxx";
+    let cxx_namespace = "cxx_clang::clang::lex::macro_info::module_macro";
+    let cxx_name = "ModuleMacro";
+    let rust_name = "ModuleMacro";
     let lifetimes = ::cxx_memory_abi::indexmap::IndexMap::from_iter([("ctx", vec![])].into_iter());
     let align = self::ffi::cxx_abi_align();
     let size = self::ffi::cxx_abi_size();

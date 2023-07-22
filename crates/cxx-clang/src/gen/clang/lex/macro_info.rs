@@ -1,3 +1,5 @@
+pub(crate) mod module_macro;
+
 #[cxx::bridge]
 mod ffi {
     extern "C++" {

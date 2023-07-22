@@ -18,6 +18,7 @@ fn process_cxx() -> BoxResult<()> {
         "src/abi/clang/ast/named_decl.rs",
         "src/abi/clang/basic/module.rs",
         "src/abi/clang/lex/macro_info.rs",
+        "src/abi/clang/lex/macro_info/module_macro.rs",
     ];
     let files: &[&str] = &[];
     let output = "cxx-clang-abi";

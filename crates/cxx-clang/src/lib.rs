@@ -49,12 +49,15 @@ pub mod clang {
     }
     pub mod lex {
         pub mod macro_info {
+            pub mod module_macro {
+                pub use crate::ffi::clang::lex::macro_info::module_macro::ModuleMacro;
+            }
             pub use crate::ffi::clang::lex::macro_info::MacroInfo;
         }
     }
     pub use crate::ffi::clang::{
         ast::{ast_context::AstContext, decl::Decl, named_decl::NamedDecl},
         basic::module::Module,
-        lex::macro_info::MacroInfo,
+        lex::macro_info::{module_macro::ModuleMacro, MacroInfo},
     };
 }

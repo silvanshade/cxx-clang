@@ -1,4 +1,5 @@
 #![doc = r" NOTE: This module is auto-generated and should not be edited."]
+pub(crate) mod module_macro;
 #[repr(C, align(8))]
 pub struct MacroInfo<'ctx> {
     _layout: [u8; 40],

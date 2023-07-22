@@ -16,5 +16,6 @@ pub fn process_artifacts() -> ::cxx_memory_abi::BoxResult<()> {
     self::clang::basic::module::write_module()?;
     self::clang::lex::write_module()?;
     self::clang::lex::macro_info::write_module()?;
+    self::clang::lex::macro_info::module_macro::write_module()?;
     Ok(())
 }
