@@ -11,6 +11,7 @@ unsafe impl<'ctx> ::cxx::ExternType for Module<'ctx> {
     type Kind = ::cxx::kind::Opaque;
 }
 impl<'ctx> ::core::ops::Drop for Module<'ctx> {
+    #[cfg_attr(feature = "tracing", tracing::instrument)]
     #[inline]
     fn drop(&mut self) {
         unsafe {
