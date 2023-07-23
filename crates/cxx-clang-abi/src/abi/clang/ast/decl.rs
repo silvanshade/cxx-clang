@@ -1,4 +1,19 @@
 #![doc = r" NOTE: This module is auto-generated and should not be edited."]
+pub mod decl_context;
+pub mod declarator_decl;
+pub mod field_decl;
+pub mod function_decl;
+pub mod named_decl;
+pub mod objc_container_decl;
+pub mod objc_interface_decl;
+pub mod objc_method_decl;
+pub mod objc_protocol_decl;
+pub mod record_decl;
+pub mod tag_decl;
+pub mod type_decl;
+pub mod typedef_decl;
+pub mod typedef_name_decl;
+pub mod value_decl;
 #[cxx::bridge]
 mod ffi {
     #[namespace = "cxx_clang::clang::ast::decl"]
@@ -18,7 +33,23 @@ mod ffi {
 pub use ffi::*;
 fn artifact_info() -> ::cxx_memory_abi::CxxAbiArtifactInfo {
     let path_components = vec!["clang", "ast", "decl"];
-    let path_descendants = vec![];
+    let path_descendants = vec![
+        "decl_context",
+        "declarator_decl",
+        "field_decl",
+        "function_decl",
+        "named_decl",
+        "objc_container_decl",
+        "objc_interface_decl",
+        "objc_method_decl",
+        "objc_protocol_decl",
+        "record_decl",
+        "tag_decl",
+        "type_decl",
+        "typedef_decl",
+        "typedef_name_decl",
+        "value_decl",
+    ];
     let cxx_include = "cxx-clang-abi/cxx/include/clang/AST/Decl.hxx";
     let cxx_namespace = "cxx_clang::clang::ast::decl";
     let cxx_name = "Decl";

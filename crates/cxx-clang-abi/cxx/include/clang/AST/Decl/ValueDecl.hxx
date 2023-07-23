@@ -4,9 +4,9 @@
 
 #include "clang/AST/Decl.h"
 
-namespace cxx_clang::clang::ast::named_decl {
-using NamedDecl = ::clang::NamedDecl;
-using F = NamedDecl;
+namespace cxx_clang::clang::ast::decl::value_decl {
+using ValueDecl = ::clang::ValueDecl;
+using F = ValueDecl;
 
 [[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
 constexpr static inline auto
@@ -71,9 +71,9 @@ cxx_is_trivially_destructible() noexcept -> bool
   return cxx_memory::abi::cxx_is_trivially_destructible<F>();
 }
 
-} // namespace cxx_clang::clang::ast::named_decl
+} // namespace cxx_clang::clang::ast::decl::value_decl
 
-namespace cxx_clang::clang::ast::named_decl {
+namespace cxx_clang::clang::ast::decl::value_decl {
 [[gnu::always_inline]]
 static inline auto
 cxx_destruct(F* This [[clang::lifetimebound]]) -> void
@@ -81,14 +81,14 @@ cxx_destruct(F* This [[clang::lifetimebound]]) -> void
   return cxx_memory::abi::cxx_destruct(This);
 }
 
-} // namespace cxx_clang::clang::ast::named_decl
+} // namespace cxx_clang::clang::ast::decl::value_decl
 
-namespace cxx_clang::clang::ast::named_decl {
+namespace cxx_clang::clang::ast::decl::value_decl {
 [[nodiscard]] [[gnu::always_inline]]
 static inline auto
-as_ref_decl(F const& This [[clang::lifetimebound]]) -> ::clang::Decl const&
+as_ref_named_decl(F const& This [[clang::lifetimebound]]) -> ::clang::NamedDecl const&
 {
   return This;
 }
 
-} // namespace cxx_clang::clang::ast::named_decl
+} // namespace cxx_clang::clang::ast::decl::value_decl

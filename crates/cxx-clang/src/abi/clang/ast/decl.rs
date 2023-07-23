@@ -1,4 +1,19 @@
 #![doc = r" NOTE: This module is auto-generated and should not be edited."]
+pub(crate) mod decl_context;
+pub(crate) mod declarator_decl;
+pub(crate) mod field_decl;
+pub(crate) mod function_decl;
+pub(crate) mod named_decl;
+pub(crate) mod objc_container_decl;
+pub(crate) mod objc_interface_decl;
+pub(crate) mod objc_method_decl;
+pub(crate) mod objc_protocol_decl;
+pub(crate) mod record_decl;
+pub(crate) mod tag_decl;
+pub(crate) mod type_decl;
+pub(crate) mod typedef_decl;
+pub(crate) mod typedef_name_decl;
+pub(crate) mod value_decl;
 #[repr(C, align(8))]
 pub struct Decl<'ctx> {
     _layout: [u8; 40],

@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCMethodDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::objc_method_decl",
+  "cxx_name": "ObjCMethodDecl",
+  "rust_name": "ObjcMethodDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/DeclContext.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::decl_context",
+  "rust_name": "DeclContext",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

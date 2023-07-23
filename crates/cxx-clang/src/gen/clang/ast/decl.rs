@@ -1,3 +1,19 @@
+pub(crate) mod decl_context;
+pub(crate) mod declarator_decl;
+pub(crate) mod field_decl;
+pub(crate) mod function_decl;
+pub(crate) mod named_decl;
+pub(crate) mod objc_container_decl;
+pub(crate) mod objc_interface_decl;
+pub(crate) mod objc_method_decl;
+pub(crate) mod objc_protocol_decl;
+pub(crate) mod record_decl;
+pub(crate) mod tag_decl;
+pub(crate) mod type_decl;
+pub(crate) mod typedef_decl;
+pub(crate) mod typedef_name_decl;
+pub(crate) mod value_decl;
+
 #[cxx::bridge]
 mod ffi {
     #![allow(unreachable_patterns)]
@@ -136,9 +152,52 @@ mod ffi {
 
     extern "C++" {
         include!("cxx-clang-abi/cxx/include/clang/AST/Decl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/FieldDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/FunctionDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/NamedDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCInterfaceDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCMethodDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCProtocolDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/RecordDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypeDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypedefDecl.hxx");
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypedefNameDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl"]
         type Decl<'ctx> = crate::ffi::clang::ast::decl::Decl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::field_decl"]
+        type FieldDecl<'ctx> = crate::ffi::clang::ast::decl::field_decl::FieldDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::function_decl"]
+        type FunctionDecl<'ctx> = crate::ffi::clang::ast::decl::function_decl::FunctionDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::named_decl"]
+        type NamedDecl<'ctx> = crate::ffi::clang::ast::decl::named_decl::NamedDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::objc_interface_decl"]
+        #[cxx_name = "ObjCInterfaceDecl"]
+        type ObjcInterfaceDecl<'ctx> = crate::ffi::clang::ast::decl::objc_interface_decl::ObjcInterfaceDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::objc_method_decl"]
+        #[cxx_name = "ObjCMethodDecl"]
+        type ObjcMethodDecl<'ctx> = crate::ffi::clang::ast::decl::objc_method_decl::ObjcMethodDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::objc_protocol_decl"]
+        #[cxx_name = "ObjCProtocolDecl"]
+        type ObjcProtocolDecl<'ctx> = crate::ffi::clang::ast::decl::objc_protocol_decl::ObjcProtocolDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::record_decl"]
+        type RecordDecl<'ctx> = crate::ffi::clang::ast::decl::record_decl::RecordDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::type_decl"]
+        type TypeDecl<'ctx> = crate::ffi::clang::ast::decl::type_decl::TypeDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::typedef_decl"]
+        type TypedefDecl<'ctx> = crate::ffi::clang::ast::decl::typedef_decl::TypedefDecl<'ctx>;
+
+        #[namespace = "cxx_clang::clang::ast::decl::typedef_name_decl"]
+        type TypedefNameDecl<'ctx> = crate::ffi::clang::ast::decl::typedef_name_decl::TypedefNameDecl<'ctx>;
 
         type DeclKind;
     }
@@ -146,6 +205,29 @@ mod ffi {
     #[namespace = "cxx_clang::clang::ast::decl"]
     unsafe extern "C++" {
         fn get_kind(This: &Decl) -> DeclKind;
+    }
+
+    #[namespace = "cxx_clang::clang::ast::decl"]
+    unsafe extern "C++" {
+        fn cast_as_field_decl<'ctx>(This: &Decl<'ctx>) -> *const FieldDecl<'ctx>;
+
+        fn cast_as_function_decl<'ctx>(This: &Decl<'ctx>) -> *const FunctionDecl<'ctx>;
+
+        fn cast_as_named_decl<'ctx>(This: &Decl<'ctx>) -> *const NamedDecl<'ctx>;
+
+        fn cast_as_objc_interface_decl<'ctx>(This: &Decl<'ctx>) -> *const ObjcInterfaceDecl<'ctx>;
+
+        fn cast_as_objc_method_decl<'ctx>(This: &Decl<'ctx>) -> *const ObjcMethodDecl<'ctx>;
+
+        fn cast_as_objc_protocol_decl<'ctx>(This: &Decl<'ctx>) -> *const ObjcProtocolDecl<'ctx>;
+
+        fn cast_as_record_decl<'ctx>(This: &Decl<'ctx>) -> *const RecordDecl<'ctx>;
+
+        fn cast_as_type_decl<'ctx>(This: &Decl<'ctx>) -> *const TypeDecl<'ctx>;
+
+        fn cast_as_typedef_name_decl<'ctx>(This: &Decl<'ctx>) -> *const TypedefNameDecl<'ctx>;
+
+        fn cast_as_typedef_decl<'ctx>(This: &Decl<'ctx>) -> *const TypedefDecl<'ctx>;
     }
 }
 pub use self::ffi::DeclKind as Kind;

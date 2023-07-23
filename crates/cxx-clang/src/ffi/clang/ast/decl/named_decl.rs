@@ -1,6 +1,6 @@
-use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::named_decl};
+use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::named_decl};
 
-pub use crate::abi::clang::ast::named_decl::NamedDecl;
+pub use crate::abi::clang::ast::decl::named_decl::NamedDecl;
 
 impl<'ctx> NamedDecl<'ctx> {
     #[inline]
@@ -20,7 +20,7 @@ impl<'ctx> ::core::ops::Deref for NamedDecl<'ctx> {
     type Target = Decl<'ctx>;
 
     #[inline]
-    fn deref(&self) -> &Decl<'ctx> {
+    fn deref(&self) -> &Self::Target {
         self.as_ref_decl()
     }
 }

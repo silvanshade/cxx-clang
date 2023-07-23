@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCProtocolDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::objc_protocol_decl",
+  "cxx_name": "ObjCProtocolDecl",
+  "rust_name": "ObjcProtocolDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

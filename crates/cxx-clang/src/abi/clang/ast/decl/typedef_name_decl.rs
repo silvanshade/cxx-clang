@@ -1,16 +1,16 @@
 #![doc = r" NOTE: This module is auto-generated and should not be edited."]
 #[repr(C, align(8))]
-pub struct NamedDecl<'ctx> {
-    _layout: [u8; 48],
+pub struct TypedefNameDecl<'ctx> {
+    _layout: [u8; 88],
     _neither_send_nor_sync: ::core::marker::PhantomData<[*const u8; 0]>,
     _pinned: ::core::marker::PhantomPinned,
     _lifetimes: ::core::marker::PhantomData<(&'ctx (),)>,
 }
-unsafe impl<'ctx> ::cxx::ExternType for NamedDecl<'ctx> {
-    type Id = ::cxx::type_id!("cxx_clang::clang::ast::named_decl::NamedDecl");
+unsafe impl<'ctx> ::cxx::ExternType for TypedefNameDecl<'ctx> {
+    type Id = ::cxx::type_id!("cxx_clang::clang::ast::decl::typedef_name_decl::TypedefNameDecl");
     type Kind = ::cxx::kind::Opaque;
 }
-impl<'ctx> ::core::ops::Drop for NamedDecl<'ctx> {
+impl<'ctx> ::core::ops::Drop for TypedefNameDecl<'ctx> {
     #[cfg_attr(feature = "tracing", tracing::instrument)]
     #[inline]
     fn drop(&mut self) {
@@ -20,20 +20,20 @@ impl<'ctx> ::core::ops::Drop for NamedDecl<'ctx> {
     }
 }
 #[cfg(feature = "debug")]
-impl<'ctx> ::core::fmt::Debug for NamedDecl<'ctx> {
+impl<'ctx> ::core::fmt::Debug for TypedefNameDecl<'ctx> {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
-        f.debug_struct("NamedDecl").finish()
+        f.debug_struct("TypedefNameDecl").finish()
     }
 }
 #[cxx::bridge]
 pub(crate) mod ffi {
-    #[namespace = "cxx_clang::clang::ast::named_decl"]
+    #[namespace = "cxx_clang::clang::ast::decl::typedef_name_decl"]
     unsafe extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/NamedDecl.hxx");
-        #[cxx_name = "NamedDecl"]
+        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypedefNameDecl.hxx");
+        #[cxx_name = "TypedefNameDecl"]
         #[allow(unused)]
-        type NamedDecl<'ctx> = super::NamedDecl<'ctx>;
-        unsafe fn cxx_destruct<'ctx>(This: *mut NamedDecl<'ctx>);
+        type TypedefNameDecl<'ctx> = super::TypedefNameDecl<'ctx>;
+        unsafe fn cxx_destruct<'ctx>(This: *mut TypedefNameDecl<'ctx>);
     }
 }
 #[cfg(test)]
@@ -43,11 +43,11 @@ mod info {
         use super::*;
         #[test]
         fn cxx_abi_align() {
-            ::core::assert_eq!(::core::mem::align_of::<NamedDecl<'static>>(), 8)
+            ::core::assert_eq!(::core::mem::align_of::<TypedefNameDecl<'static>>(), 8)
         }
         #[test]
         fn cxx_abi_size() {
-            ::core::assert_eq!(::core::mem::size_of::<NamedDecl<'static>>(), 48)
+            ::core::assert_eq!(::core::mem::size_of::<TypedefNameDecl<'static>>(), 88)
         }
     }
 }
