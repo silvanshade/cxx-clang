@@ -1,4 +1,5 @@
 use crate::{ffi::clang::ast::decl::declarator_decl::DeclaratorDecl, gen::clang::ast::decl::field_decl};
+use core::pin::Pin;
 
 pub use crate::abi::clang::ast::decl::field_decl::FieldDecl;
 
@@ -6,6 +7,11 @@ impl<'ctx> FieldDecl<'ctx> {
     #[inline]
     pub fn as_ref_declarator_decl(&self) -> &DeclaratorDecl<'ctx> {
         field_decl::as_ref_declarator_decl(self)
+    }
+
+    #[inline]
+    pub fn as_pin_declarator_decl(self: Pin<&mut Self>) -> Pin<&mut DeclaratorDecl<'ctx>> {
+        field_decl::as_pin_declarator_decl(self)
     }
 }
 

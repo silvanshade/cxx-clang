@@ -14,6 +14,8 @@ mod ffi {
     #[namespace = "cxx_clang::clang::ast::decl::record_decl"]
     unsafe extern "C++" {
         fn as_ref_tag_decl<'this, 'ctx>(This: &'this RecordDecl<'ctx>) -> &'this TagDecl<'ctx>;
+
+        fn as_pin_tag_decl<'this, 'ctx>(This: Pin<&'this mut RecordDecl<'ctx>>) -> Pin<&'this mut TagDecl<'ctx>>;
     }
 }
 pub(crate) use self::ffi::*;

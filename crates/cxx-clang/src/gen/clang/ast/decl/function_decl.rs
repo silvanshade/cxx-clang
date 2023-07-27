@@ -19,7 +19,15 @@ mod ffi {
     unsafe extern "C++" {
         fn as_ref_decl_context<'this, 'ctx>(This: &'this FunctionDecl<'ctx>) -> &'this DeclContext<'ctx>;
 
+        fn as_pin_decl_context<'this, 'ctx>(
+            This: Pin<&'this mut FunctionDecl<'ctx>>,
+        ) -> Pin<&'this mut DeclContext<'ctx>>;
+
         fn as_ref_declarator_decl<'this, 'ctx>(This: &'this FunctionDecl<'ctx>) -> &'this DeclaratorDecl<'ctx>;
+
+        fn as_pin_declarator_decl<'this, 'ctx>(
+            This: Pin<&'this mut FunctionDecl<'ctx>>,
+        ) -> Pin<&'this mut DeclaratorDecl<'ctx>>;
     }
 }
 pub(crate) use self::ffi::*;

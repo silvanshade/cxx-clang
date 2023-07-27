@@ -1,4 +1,5 @@
 use crate::{ffi::clang::ast::decl::type_decl::TypeDecl, gen::clang::ast::decl::typedef_name_decl};
+use core::pin::Pin;
 
 pub use crate::abi::clang::ast::decl::typedef_name_decl::TypedefNameDecl;
 
@@ -6,6 +7,11 @@ impl<'ctx> TypedefNameDecl<'ctx> {
     #[inline]
     pub fn as_ref_type_decl(&self) -> &TypeDecl<'ctx> {
         typedef_name_decl::as_ref_type_decl(self)
+    }
+
+    #[inline]
+    pub fn as_pin_type_decl(self: Pin<&mut Self>) -> Pin<&mut TypeDecl<'ctx>> {
+        typedef_name_decl::as_pin_type_decl(self)
     }
 }
 

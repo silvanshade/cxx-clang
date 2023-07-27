@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/MSPropertyDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::ms_property_decl",
+  "cxx_name": "MSPropertyDecl",
+  "rust_name": "MsPropertyDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

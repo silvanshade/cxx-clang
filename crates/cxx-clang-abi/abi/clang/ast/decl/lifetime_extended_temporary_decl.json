@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/LifetimeExtendedTemporaryDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::lifetime_extended_temporary_decl",
+  "rust_name": "LifetimeExtendedTemporaryDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

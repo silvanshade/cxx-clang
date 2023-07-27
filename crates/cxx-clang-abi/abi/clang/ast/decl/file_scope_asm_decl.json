@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/FileScopeAsmDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::file_scope_asm_decl",
+  "rust_name": "FileScopeAsmDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

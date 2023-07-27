@@ -1,9 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCInterfaceDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::objc_interface_decl",
-  "cxx_name": "ObjCInterfaceDecl",
-  "rust_name": "ObjcInterfaceDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

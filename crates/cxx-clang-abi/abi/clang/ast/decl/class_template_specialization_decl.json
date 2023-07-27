@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ClassTemplateSpecializationDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::class_template_specialization_decl",
+  "rust_name": "ClassTemplateSpecializationDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

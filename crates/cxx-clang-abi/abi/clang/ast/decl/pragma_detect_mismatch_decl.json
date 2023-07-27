@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/PragmaDetectMismatchDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::pragma_detect_mismatch_decl",
+  "rust_name": "PragmaDetectMismatchDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

@@ -2,6 +2,7 @@ use crate::{
     ffi::clang::ast::decl::{decl_context::DeclContext, declarator_decl::DeclaratorDecl},
     gen::clang::ast::decl::function_decl,
 };
+use core::pin::Pin;
 
 pub use crate::abi::clang::ast::decl::function_decl::FunctionDecl;
 
@@ -12,8 +13,18 @@ impl<'ctx> FunctionDecl<'ctx> {
     }
 
     #[inline]
+    pub fn as_pin_decl_context(self: Pin<&mut Self>) -> Pin<&mut DeclContext<'ctx>> {
+        function_decl::as_pin_decl_context(self)
+    }
+
+    #[inline]
     pub fn as_ref_declarator_decl(&self) -> &DeclaratorDecl<'ctx> {
         function_decl::as_ref_declarator_decl(self)
+    }
+
+    #[inline]
+    pub fn as_pin_declarator_decl(self: Pin<&mut Self>) -> Pin<&mut DeclaratorDecl<'ctx>> {
+        function_decl::as_pin_declarator_decl(self)
     }
 }
 

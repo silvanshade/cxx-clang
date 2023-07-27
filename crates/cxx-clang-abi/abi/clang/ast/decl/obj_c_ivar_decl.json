@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCIvarDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::obj_c_ivar_decl",
+  "rust_name": "ObjCIvarDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

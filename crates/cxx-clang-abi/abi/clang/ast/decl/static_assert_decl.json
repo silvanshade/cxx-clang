@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/StaticAssertDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::static_assert_decl",
+  "rust_name": "StaticAssertDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

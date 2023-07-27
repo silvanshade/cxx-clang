@@ -14,6 +14,10 @@ mod ffi {
     #[namespace = "cxx_clang::clang::ast::decl::field_decl"]
     unsafe extern "C++" {
         fn as_ref_declarator_decl<'this, 'ctx>(This: &'this FieldDecl<'ctx>) -> &'this DeclaratorDecl<'ctx>;
+
+        fn as_pin_declarator_decl<'this, 'ctx>(
+            This: Pin<&'this mut FieldDecl<'ctx>>,
+        ) -> Pin<&'this mut DeclaratorDecl<'ctx>>;
     }
 }
 pub(crate) use self::ffi::*;

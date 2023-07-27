@@ -17,9 +17,13 @@ mod ffi {
 
     #[namespace = "cxx_clang::clang::ast::decl::tag_decl"]
     unsafe extern "C++" {
+        fn as_ref_type_decl<'this, 'ctx>(This: &'this TagDecl<'ctx>) -> &'this TypeDecl<'ctx>;
+
+        fn as_pin_type_decl<'this, 'ctx>(This: Pin<&'this mut TagDecl<'ctx>>) -> Pin<&'this mut TypeDecl<'ctx>>;
+
         fn as_ref_decl_context<'this, 'ctx>(This: &'this TagDecl<'ctx>) -> &'this DeclContext<'ctx>;
 
-        fn as_ref_type_decl<'this, 'ctx>(This: &'this TagDecl<'ctx>) -> &'this TypeDecl<'ctx>;
+        fn as_pin_decl_context<'this, 'ctx>(This: Pin<&'this mut TagDecl<'ctx>>) -> Pin<&'this mut DeclContext<'ctx>>;
     }
 }
 pub(crate) use self::ffi::*;

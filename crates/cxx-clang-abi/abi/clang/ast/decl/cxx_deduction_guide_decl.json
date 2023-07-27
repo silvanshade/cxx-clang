@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/CXXDeductionGuideDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::cxx_deduction_guide_decl",
+  "cxx_name": "CXXDeductionGuideDecl",
+  "rust_name": "CxxDeductionGuideDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

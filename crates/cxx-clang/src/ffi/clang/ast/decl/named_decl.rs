@@ -1,4 +1,5 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::named_decl};
+use core::pin::Pin;
 
 pub use crate::abi::clang::ast::decl::named_decl::NamedDecl;
 
@@ -6,6 +7,11 @@ impl<'ctx> NamedDecl<'ctx> {
     #[inline]
     pub fn as_ref_decl(&self) -> &Decl<'ctx> {
         named_decl::as_ref_decl(self)
+    }
+
+    #[inline]
+    pub fn as_pin_decl(self: Pin<&mut Self>) -> Pin<&mut Decl<'ctx>> {
+        named_decl::as_pin_decl(self)
     }
 }
 

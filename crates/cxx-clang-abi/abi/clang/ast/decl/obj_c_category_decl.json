@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCCategoryDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::obj_c_category_decl",
+  "rust_name": "ObjCCategoryDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

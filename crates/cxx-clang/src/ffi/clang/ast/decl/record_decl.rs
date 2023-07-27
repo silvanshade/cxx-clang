@@ -1,4 +1,5 @@
 use crate::{ffi::clang::ast::decl::tag_decl::TagDecl, gen::clang::ast::decl::record_decl};
+use core::pin::Pin;
 
 pub use crate::abi::clang::ast::decl::record_decl::RecordDecl;
 
@@ -6,6 +7,11 @@ impl<'ctx> RecordDecl<'ctx> {
     #[inline]
     pub fn as_ref_tag_decl(&self) -> &TagDecl<'ctx> {
         record_decl::as_ref_tag_decl(self)
+    }
+
+    #[inline]
+    pub fn as_pin_tag_decl(self: Pin<&mut Self>) -> Pin<&mut TagDecl<'ctx>> {
+        record_decl::as_pin_tag_decl(self)
     }
 }
 

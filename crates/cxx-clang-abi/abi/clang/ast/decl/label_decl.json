@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/LabelDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::label_decl",
+  "rust_name": "LabelDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

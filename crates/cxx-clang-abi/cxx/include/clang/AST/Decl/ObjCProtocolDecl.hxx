@@ -4,91 +4,23 @@
 
 #include "clang/AST/DeclObjC.h"
 
-namespace cxx_clang::clang::ast::decl::objc_protocol_decl {
-using ObjCProtocolDecl = ::clang::ObjCProtocolDecl;
-using F = ObjCProtocolDecl;
+namespace cxx_clang::clang::ast::decl::obj_c_protocol_decl {
+CXX_MEMORY_ABI_PRELUDE(ObjCProtocolDecl, ::clang::ObjCProtocolDecl)
+} // namespace cxx_clang::clang::ast::decl::obj_c_protocol_decl
 
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_abi_align() noexcept -> size_t
-{
-  return cxx_memory::abi::cxx_abi_align<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_abi_size() noexcept -> size_t
-{
-  return cxx_memory::abi::cxx_abi_size<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_default_constructible() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_default_constructible<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_copy_constructible() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_copy_constructible<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_move_constructible() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_move_constructible<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_destructible() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_destructible<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_trivially_copyable() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_trivially_copyable<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_trivially_movable() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_trivially_movable<F>();
-}
-
-[[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
-constexpr static inline auto
-cxx_is_trivially_destructible() noexcept -> bool
-{
-  return cxx_memory::abi::cxx_is_trivially_destructible<F>();
-}
-
-} // namespace cxx_clang::clang::ast::decl::objc_protocol_decl
-
-namespace cxx_clang::clang::ast::decl::objc_protocol_decl {
-[[gnu::always_inline]]
-static inline auto
-cxx_destruct(F* This [[clang::lifetimebound]]) -> void
-{
-  return cxx_memory::abi::cxx_destruct(This);
-}
-
-} // namespace cxx_clang::clang::ast::decl::objc_protocol_decl
-
-namespace cxx_clang::clang::ast::decl::objc_protocol_decl {
+namespace cxx_clang::clang::ast::decl::obj_c_protocol_decl {
 [[nodiscard]] [[gnu::always_inline]]
 static inline auto
-as_ref_objc_container_decl(F const& This [[clang::lifetimebound]]) -> ::clang::ObjCContainerDecl const&
+as_ref_obj_c_container_decl(Self const& This [[clang::lifetimebound]]) -> ::clang::ObjCContainerDecl const&
 {
   return This;
 }
 
-} // namespace cxx_clang::clang::ast::decl::objc_protocol_decl
+[[nodiscard]] [[gnu::always_inline]]
+static inline auto
+as_pin_obj_c_container_decl(Self& This [[clang::lifetimebound]]) -> ::clang::ObjCContainerDecl&
+{
+  return This;
+}
+
+} // namespace cxx_clang::clang::ast::decl::obj_c_protocol_decl

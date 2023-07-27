@@ -1,4 +1,5 @@
 use crate::{ffi::clang::ast::decl::value_decl::ValueDecl, gen::clang::ast::decl::declarator_decl};
+use core::pin::Pin;
 
 pub use crate::abi::clang::ast::decl::declarator_decl::DeclaratorDecl;
 
@@ -6,6 +7,11 @@ impl<'ctx> DeclaratorDecl<'ctx> {
     #[inline]
     pub fn as_ref_value_decl(&self) -> &ValueDecl<'ctx> {
         declarator_decl::as_ref_value_decl(self)
+    }
+
+    #[inline]
+    pub fn as_pin_value_decl(self: Pin<&mut Self>) -> Pin<&mut ValueDecl<'ctx>> {
+        declarator_decl::as_pin_value_decl(self)
     }
 }
 

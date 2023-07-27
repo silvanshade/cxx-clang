@@ -14,6 +14,8 @@ mod ffi {
     #[namespace = "cxx_clang::clang::ast::decl::value_decl"]
     unsafe extern "C++" {
         fn as_ref_named_decl<'this, 'ctx>(This: &'this ValueDecl<'ctx>) -> &'this NamedDecl<'ctx>;
+
+        fn as_pin_named_decl<'this, 'ctx>(This: Pin<&'this mut ValueDecl<'ctx>>) -> Pin<&'this mut NamedDecl<'ctx>>;
     }
 }
 pub(crate) use self::ffi::*;

@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/AccessSpecDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::access_spec_decl",
+  "rust_name": "AccessSpecDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

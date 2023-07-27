@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/CXXConstructorDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::cxx_constructor_decl",
+  "cxx_name": "CXXConstructorDecl",
+  "rust_name": "CxxConstructorDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

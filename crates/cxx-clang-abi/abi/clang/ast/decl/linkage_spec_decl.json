@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/LinkageSpecDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::linkage_spec_decl",
+  "rust_name": "LinkageSpecDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}
