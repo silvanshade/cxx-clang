@@ -5,16 +5,13 @@
 #include "clang/AST/DeclOpenMP.h"
 
 namespace cxx_memory::abi {
-using T = ::clang::OMPDeclareMapperDecl;
-
 template<>
 [[nodiscard]] [[gnu::always_inline]] [[gnu::const]]
 constexpr inline auto
-cxx_is_move_constructible<T>() noexcept -> bool
+cxx_is_move_constructible<::clang::OMPDeclareMapperDecl>() noexcept -> bool
 {
   return false;
 }
-
 } // namespace cxx_memory::abi
 
 namespace cxx_clang::clang::ast::decl::omp_declare_mapper_decl {
