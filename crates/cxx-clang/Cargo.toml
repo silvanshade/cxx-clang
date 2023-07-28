@@ -10,14 +10,14 @@ repository = "https://github.com/silvanshade/cxx-clang"
 debug = ["tracing"]
 
 [build-dependencies]
-cxx-llvm-common = { version = "0.0", path = "../../../cxx-llvm-common" }
+cxx-llvm-common = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm-common" }
 cxx-clang-abi = { version = "0.0", path = "../cxx-clang-abi" }
 
 [dependencies]
 cxx = { version = "1.0", features = ["c++20"] }
-cxx-llvm = { version = "0.0", path = "../../../cxx-llvm/crates/cxx-llvm" }
-cxx-memory = { version = "0.0", path = "../../../cxx-memory/crates/cxx-memory" }
-cxx-memory-abi = { version = "0.0", path = "../../../cxx-memory/crates/cxx-memory-abi" }
+cxx-llvm = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
+cxx-memory = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
+cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
 cxx-clang-abi = { version = "0.0", path = "../cxx-clang-abi" }
 tracing = { version = "0.1", optional = true }
 

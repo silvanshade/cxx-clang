@@ -10,11 +10,10 @@ links = "cxx-clang-abi"
 
 [build-dependencies]
 cxx-build = { version = "1.0", features = ["parallel"] }
-cxx-llvm-common = { version = "0.0", path = "../../../cxx-llvm-common" }
-cxx-memory-abi = { version = "0.0", path = "../../../cxx-memory/crates/cxx-memory-abi" }
-normpath = "1.1"
+cxx-llvm-common = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm-common" }
+cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
 
 [dependencies]
 cxx = { version = "1.0", features = ["c++20"] }
-cxx-llvm-common = { version = "0.0", path = "../../../cxx-llvm-common" }
-cxx-memory-abi = { version = "0.0", path = "../../../cxx-memory/crates/cxx-memory-abi" }
+cxx-llvm-common = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm-common" }
+cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
