@@ -109,6 +109,7 @@ fn process_cxx() -> BoxResult<()> {
         "src/abi/clang/ast/decl/var_decl.rs",
         "src/abi/clang/ast/decl/var_template_decl.rs",
         "src/abi/clang/ast/decl/var_template_specialization_decl.rs",
+        "src/abi/clang/ast/type_.rs",
         "src/abi/clang/basic/module.rs",
         "src/abi/clang/lex/macro_info.rs",
         "src/abi/clang/lex/macro_info/module_macro.rs",

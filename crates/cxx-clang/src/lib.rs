@@ -4,6 +4,7 @@ mod ffi {
         pub(crate) mod ast {
             pub(crate) mod ast_context;
             pub(crate) mod decl;
+            pub(crate) mod type_;
         }
         pub(crate) mod basic {
             pub(crate) mod module;
@@ -18,6 +19,7 @@ mod gen {
         pub(crate) mod ast {
             pub(crate) mod ast_context;
             pub(crate) mod decl;
+            pub(crate) mod type_;
         }
         pub(crate) mod basic {
             pub(crate) mod module;
