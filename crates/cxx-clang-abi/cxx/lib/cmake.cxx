@@ -100,3 +100,4 @@
 #include "cxx-clang-abi/cxx/include/clang/Basic/Module.hxx"
 #include "cxx-clang-abi/cxx/include/clang/Lex/MacroInfo.hxx"
 #include "cxx-clang-abi/cxx/include/clang/Lex/MacroInfo/ModuleMacro.hxx"
+#include "cxx-clang-abi/cxx/include/cxx-clang-abi.hxx"

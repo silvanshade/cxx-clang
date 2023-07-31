@@ -1,6 +1,6 @@
 #pragma once
 
-#include "cxx-memory-abi/cxx/include/cxx-memory-abi.hxx"
+#include "cxx-clang-abi/cxx/include/cxx-clang-abi.hxx"
 
 #include "clang/Basic/Module.h"
 

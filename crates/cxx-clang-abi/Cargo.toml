@@ -15,5 +15,6 @@ cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-me
 
 [dependencies]
 cxx = { version = "1.0", features = ["c++20"] }
+cxx-llvm-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
 cxx-llvm-common = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm-common" }
 cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }

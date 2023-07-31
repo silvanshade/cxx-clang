@@ -16,6 +16,7 @@ cxx-clang-abi = { version = "0.0", path = "../cxx-clang-abi" }
 [dependencies]
 cxx = { version = "1.0", features = ["c++20"] }
 cxx-llvm = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
+cxx-llvm-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
 cxx-memory = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
 cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
 cxx-clang-abi = { version = "0.0", path = "../cxx-clang-abi" }
