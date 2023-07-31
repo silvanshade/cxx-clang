@@ -1,3 +1,5 @@
+#pragma once
+
 #include "cxx-clang-abi/cxx/include/cxx-clang-abi.hxx"
 
 #include "clang/AST/Type.h"
