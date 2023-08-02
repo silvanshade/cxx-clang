@@ -1,5 +1,5 @@
-type BoxError = Box<dyn std::error::Error + Send + Sync + 'static>;
-type BoxResult<T> = Result<T, BoxError>;
+use cxx_llvm_build_common::prelude::*;
+use std::path::PathBuf;
 
 pub fn project_dir() -> BoxResult<std::path::PathBuf> {
     let cargo_manifest_dir = std::env::var("CARGO_MANIFEST_DIR")?;
@@ -8,7 +8,18 @@ pub fn project_dir() -> BoxResult<std::path::PathBuf> {
 }
 
 fn process_cxx() -> BoxResult<()> {
-    let dirs = cxx_llvm_common::Dirs::new()?;
+    let cargo_pkg_name = "cxx-clang-abi";
+    let llvm_dirs = cxx_llvm_build::Dirs::new(cargo_pkg_name)?;
+    let clang_dirs = cxx_clang_build::Dirs::new(cargo_pkg_name, &llvm_dirs)?;
+    let includes = &[
+        llvm_dirs.llvm_project.join("llvm/include"),
+        llvm_dirs.llvm_cmake_build.join("include"),
+        clang_dirs.clang_project.join("include"),
+        clang_dirs.clang_cmake_build.join("include"),
+    ];
+    cxx_build::CFG
+        .exported_header_dirs
+        .extend(includes.iter().map(PathBuf::as_path));
     let rust_source_files: &[&str] = &[
         "src/abi/clang/ast/ast_context.rs",
         "src/abi/clang/ast/decl.rs",
@@ -116,7 +127,7 @@ fn process_cxx() -> BoxResult<()> {
     ];
     let files: &[&str] = &[];
     let output = "cxx-clang-abi";
-    cxx_llvm_common::cxx_build(&dirs, rust_source_files, files, output)?;
+    cxx_clang_build::cxx_build(&clang_dirs, rust_source_files, files, output)?;
     Ok(())
 }
 

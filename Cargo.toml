@@ -3,4 +3,5 @@
 members = [
   "crates/cxx-clang",
   "crates/cxx-clang-abi",
+  "crates/cxx-clang-build",
 ]
