@@ -127,7 +127,7 @@ fn process_cxx() -> BoxResult<()> {
     ];
     let files: &[&str] = &[];
     let output = "cxx-clang-abi";
-    cxx_clang_build::cxx_build(&clang_dirs, rust_source_files, files, output)?;
+    cxx_clang_build::cxx_build(&llvm_dirs, &clang_dirs, rust_source_files, files, output)?;
     Ok(())
 }
 

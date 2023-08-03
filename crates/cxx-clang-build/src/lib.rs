@@ -3,9 +3,8 @@ use normpath::PathExt;
 use std::path::{Path, PathBuf};
 
 fn locate_clang_project_path(cargo_manifest_dir: &Path, llvm_project: &Path) -> BoxResult<PathBuf> {
-    let err = Err(
-        r#"Failed to locate Clang project path. Try setting the `CLANG_PROJECT_PATH` environment variable."#.into(),
-    );
+    let err =
+        Err("Failed to locate Clang project path. Try setting the `CLANG_PROJECT_PATH` environment variable.".into());
 
     let mut should_ignore = false;
 
@@ -32,7 +31,7 @@ fn locate_clang_project_path(cargo_manifest_dir: &Path, llvm_project: &Path) -> 
 
 fn locate_clang_cmake_build_path(llvm_cmake_build: &Path, clang_project: &Path) -> BoxResult<PathBuf> {
     let err = Err(
-        r#"Failed to locate Clang CMake build path. Try setting the `CLANG_CMAKE_BUILD_PATH` environment variable."#
+        "Failed to locate Clang CMake build path. Try setting the `CLANG_CMAKE_BUILD_PATH` environment variable."
             .into(),
     );
 
@@ -84,7 +83,7 @@ impl Dirs {
         let clang_cmake_build = locate_clang_cmake_build_path(llvm_cmake_build, &clang_project)?;
         println!(
             "cargo:warning=[{cargo_pkg_name}]: Clang CMake build path: \"{}\"",
-            clang_cmake_build.display().to_string()
+            clang_cmake_build.display()
         );
         let dirs = Dirs {
             clang_project,
@@ -95,12 +94,13 @@ impl Dirs {
 }
 
 pub fn cxx_build(
-    dirs: &Dirs,
+    llvm_dirs: &cxx_llvm_build::Dirs,
+    clang_dirs: &Dirs,
     rust_source_files: impl IntoIterator<Item = impl AsRef<Path>>,
     files: impl IntoIterator<Item = impl AsRef<Path>>,
     output: &str,
 ) -> BoxResult<()> {
-    rustc_link_search(dirs);
+    rustc_link_searches(llvm_dirs, clang_dirs);
     cxx_build::bridges(rust_source_files)
         .llvm_common_compiler()
         .llvm_common_defines()
@@ -111,18 +111,10 @@ pub fn cxx_build(
     Ok(())
 }
 
-fn rustc_link_search(dirs: &Dirs) {
-    println!(
-        "cargo:rustc-link-search={}",
-        dirs.clang_cmake_build.join("lib").display()
-    );
+pub fn rustc_link_searches(_llvm_dirs: &cxx_llvm_build::Dirs, _clang_dirs: &Dirs) {
 }
 
-fn rustc_link_libs() {
-    link_clang_libs();
-}
-
-fn link_clang_libs() {
+pub fn rustc_link_libs() {
     println!("cargo:rustc-link-lib=static=clangIndex");
     println!("cargo:rustc-link-lib=static=clangDependencyScanning");
     println!("cargo:rustc-link-lib=static=clangCodeGen");
@@ -139,4 +131,5 @@ fn link_clang_libs() {
     println!("cargo:rustc-link-lib=static=clangAST");
     println!("cargo:rustc-link-lib=static=clangLex");
     println!("cargo:rustc-link-lib=static=clangBasic");
+    cxx_llvm_build::rustc_link_libs();
 }
