@@ -17,8 +17,8 @@ target_include_directories(cxx-clang-abi PUBLIC
   ../cxx-llvm/crates/cxx-llvm-abi/..
   ../cxx-memory/crates/cxx-memory-abi/..
   target/cxxbridge
-  ../swift-project/build/Ninja-ReleaseAssert/llvm-linux-x86_64/include
-  ../swift-project/build/Ninja-ReleaseAssert/llvm-linux-x86_64/tools/clang/include
+  ../swift-project/build/Ninja-MinSizeRelAssert/llvm-linux-x86_64/include
+  ../swift-project/build/Ninja-MinSizeRelAssert/llvm-linux-x86_64/tools/clang/include
   ../swift-project/llvm-project/clang/include
   ../swift-project/llvm-project/llvm/include
 )
