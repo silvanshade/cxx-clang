@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::var_decl::VarDecl, gen::clang::ast::decl::var_template_specialization_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::var_template_specialization_decl::VarTemplateSpecializationDecl;
+pub use crate::auto::clang::ast::decl::var_template_specialization_decl::VarTemplateSpecializationDecl;
 
 impl<'ctx> VarTemplateSpecializationDecl<'ctx> {
     #[inline]

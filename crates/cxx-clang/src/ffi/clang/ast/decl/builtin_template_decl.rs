@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::named_decl::NamedDecl, gen::clang::ast::decl::builtin_template_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::builtin_template_decl::BuiltinTemplateDecl;
+pub use crate::auto::clang::ast::decl::builtin_template_decl::BuiltinTemplateDecl;
 
 impl<'ctx> BuiltinTemplateDecl<'ctx> {
     #[inline]

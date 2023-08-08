@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/RedeclarableTemplateDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::redeclarable_template_decl",
+  "rust_name": "RedeclarableTemplateDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

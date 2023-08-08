@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/BindingDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::binding_decl",
+  "rust_name": "BindingDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

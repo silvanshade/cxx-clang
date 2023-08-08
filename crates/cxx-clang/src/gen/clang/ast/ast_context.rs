@@ -1,7 +1,7 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/ASTContext.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/ASTContext.hxx");
 
         // #[namespace = "cxx_clang::clang::ast::ast_context"]
         // #[cxx_name = "ASTContext"]

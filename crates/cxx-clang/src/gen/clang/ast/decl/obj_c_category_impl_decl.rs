@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCCategoryImplDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCImplDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCCategoryImplDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCImplDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::obj_c_category_impl_decl"]
         type ObjCCategoryImplDecl<'ctx> =

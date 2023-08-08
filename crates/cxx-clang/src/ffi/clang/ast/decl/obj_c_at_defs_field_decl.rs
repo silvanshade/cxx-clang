@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::field_decl::FieldDecl, gen::clang::ast::decl::obj_c_at_defs_field_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_at_defs_field_decl::ObjCAtDefsFieldDecl;
+pub use crate::auto::clang::ast::decl::obj_c_at_defs_field_decl::ObjCAtDefsFieldDecl;
 
 impl<'ctx> ObjCAtDefsFieldDecl<'ctx> {
     #[inline]

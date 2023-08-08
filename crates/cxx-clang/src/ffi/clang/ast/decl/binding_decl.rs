@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::value_decl::ValueDecl, gen::clang::ast::decl::binding_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::binding_decl::BindingDecl;
+pub use crate::auto::clang::ast::decl::binding_decl::BindingDecl;
 
 impl<'ctx> BindingDecl<'ctx> {
     #[inline]

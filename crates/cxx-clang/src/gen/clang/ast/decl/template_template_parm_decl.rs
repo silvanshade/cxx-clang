@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TemplateDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TemplateTemplateParmDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TemplateTemplateParmDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::template_decl"]
         type TemplateDecl<'ctx> = crate::ffi::clang::ast::decl::template_decl::TemplateDecl<'ctx>;

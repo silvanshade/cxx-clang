@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_protocol_decl::ObjCProtocolDecl;
+pub use crate::auto::clang::ast::decl::obj_c_protocol_decl::ObjCProtocolDecl;
 
 impl<'ctx> ObjCProtocolDecl<'ctx> {
     #[inline]

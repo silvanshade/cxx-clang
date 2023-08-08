@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ConstructorUsingShadowDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::constructor_using_shadow_decl",
-  "rust_name": "ConstructorUsingShadowDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

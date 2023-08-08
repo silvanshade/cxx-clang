@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::type_alias_template_decl::TypeAliasTemplateDecl;
+pub use crate::auto::clang::ast::decl::type_alias_template_decl::TypeAliasTemplateDecl;
 
 impl<'ctx> TypeAliasTemplateDecl<'ctx> {
     #[inline]

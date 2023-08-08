@@ -1,7 +1,7 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Type.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Type.hxx");
 
         // #[namespace = "cxx_clang::clang::ast::type"]
         // type Type<'ctx> = crate::ffi::clang::ast::type_::Type<'ctx>;

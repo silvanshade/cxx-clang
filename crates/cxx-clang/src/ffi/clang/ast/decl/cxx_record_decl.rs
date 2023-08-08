@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::record_decl::RecordDecl, gen::clang::ast::decl::cxx_record_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::cxx_record_decl::CxxRecordDecl;
+pub use crate::auto::clang::ast::decl::cxx_record_decl::CxxRecordDecl;
 
 impl<'ctx> CxxRecordDecl<'ctx> {
     #[inline]

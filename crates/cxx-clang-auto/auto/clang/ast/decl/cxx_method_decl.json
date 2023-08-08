@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/CXXMethodDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::cxx_method_decl",
+  "cxx_name": "CXXMethodDecl",
+  "rust_name": "CxxMethodDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

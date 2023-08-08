@@ -1,9 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/CXXConversionDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::cxx_conversion_decl",
-  "cxx_name": "CXXConversionDecl",
-  "rust_name": "CxxConversionDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

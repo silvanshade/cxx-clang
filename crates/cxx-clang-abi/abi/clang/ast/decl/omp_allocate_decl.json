@@ -1,9 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/OMPAllocateDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::omp_allocate_decl",
-  "cxx_name": "OMPAllocateDecl",
-  "rust_name": "OmpAllocateDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

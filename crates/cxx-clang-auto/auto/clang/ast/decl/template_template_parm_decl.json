@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/TemplateTemplateParmDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::template_template_parm_decl",
+  "rust_name": "TemplateTemplateParmDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

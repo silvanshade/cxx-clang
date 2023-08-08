@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/RedeclarableTemplateDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/VarTemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/RedeclarableTemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/VarTemplateDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::redeclarable_template_decl"]
         type RedeclarableTemplateDecl<'ctx> =

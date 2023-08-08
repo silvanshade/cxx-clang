@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::class_template_partial_specialization_decl::ClassTemplatePartialSpecializationDecl;
+pub use crate::auto::clang::ast::decl::class_template_partial_specialization_decl::ClassTemplatePartialSpecializationDecl;
 
 impl<'ctx> ClassTemplatePartialSpecializationDecl<'ctx> {
     #[inline]

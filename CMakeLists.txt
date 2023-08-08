@@ -9,21 +9,21 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # ensure that the C++ compiler is `clang++`
 set(CMAKE_CXX_COMPILER "clang++")
 
-add_library(cxx-clang-abi STATIC
-  crates/cxx-clang-abi/cxx/lib/cmake.cxx
+add_library(cxx-clang-auto STATIC
+  crates/cxx-clang-auto/cxx/lib/cmake.cxx
 )
-target_include_directories(cxx-clang-abi PUBLIC
-  ../cxx-clang/crates/cxx-clang-abi/..
-  ../cxx-llvm/crates/cxx-llvm-abi/..
-  ../cxx-memory/crates/cxx-memory-abi/..
+target_include_directories(cxx-clang-auto PUBLIC
+  ../cxx-clang/crates/cxx-clang-auto/..
+  ../cxx-llvm/crates/cxx-llvm-auto/..
+  ../cxx-auto/..
   target/cxxbridge
   ../swift-project/build/Ninja-MinSizeRelAssert/llvm-linux-x86_64/include
   ../swift-project/build/Ninja-MinSizeRelAssert/llvm-linux-x86_64/tools/clang/include
   ../swift-project/llvm-project/clang/include
   ../swift-project/llvm-project/llvm/include
 )
-target_compile_definitions(cxx-clang-abi PUBLIC _LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS)
-target_compile_options(cxx-clang-abi PUBLIC
+target_compile_definitions(cxx-clang-auto PUBLIC _LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS)
+target_compile_options(cxx-clang-auto PUBLIC
   -std=gnu++20
   # -stdlib=libc++
   -Werror

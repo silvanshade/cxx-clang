@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/TemplateParamObjectDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::template_param_object_decl",
-  "rust_name": "TemplateParamObjectDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

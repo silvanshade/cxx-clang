@@ -1,9 +1,9 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/DeclaratorDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/DeclContext.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/FunctionDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/DeclaratorDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/DeclContext.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/FunctionDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::declarator_decl"]
         type DeclaratorDecl<'ctx> = crate::ffi::clang::ast::decl::declarator_decl::DeclaratorDecl<'ctx>;

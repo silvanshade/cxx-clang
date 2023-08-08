@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/DeclaratorDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/FieldDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/DeclaratorDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/FieldDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::declarator_decl"]
         type DeclaratorDecl<'ctx> = crate::ffi::clang::ast::decl::declarator_decl::DeclaratorDecl<'ctx>;

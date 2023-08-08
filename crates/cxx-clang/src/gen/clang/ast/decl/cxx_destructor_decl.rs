@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/CXXDestructorDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/CXXMethodDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/CXXDestructorDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/CXXMethodDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::cxx_destructor_decl"]
         #[cxx_name = "CXXDestructorDecl"]

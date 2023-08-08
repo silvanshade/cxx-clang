@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/RequiresExprBodyDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::requires_expr_body_decl",
-  "rust_name": "RequiresExprBodyDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

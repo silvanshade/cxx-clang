@@ -1,4 +1,4 @@
-mod abi;
+mod auto;
 mod ffi {
     pub(crate) mod clang {
         pub(crate) mod ast {

@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::typedef_name_decl::TypedefNameDecl, gen::clang::ast::decl::obj_c_type_param_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_type_param_decl::ObjCTypeParamDecl;
+pub use crate::auto::clang::ast::decl::obj_c_type_param_decl::ObjCTypeParamDecl;
 
 impl<'ctx> ObjCTypeParamDecl<'ctx> {
     #[inline]

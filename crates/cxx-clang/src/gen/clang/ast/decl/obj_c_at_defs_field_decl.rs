@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/FieldDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCAtDefsFieldDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/FieldDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCAtDefsFieldDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::field_decl"]
         type FieldDecl<'ctx> = crate::ffi::clang::ast::decl::field_decl::FieldDecl<'ctx>;

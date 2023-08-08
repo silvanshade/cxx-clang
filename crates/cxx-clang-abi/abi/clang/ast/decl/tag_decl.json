@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/TagDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::tag_decl",
-  "rust_name": "TagDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

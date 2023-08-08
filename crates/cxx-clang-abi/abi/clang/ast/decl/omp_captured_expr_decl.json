@@ -1,9 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/OMPCapturedExprDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::omp_captured_expr_decl",
-  "cxx_name": "OMPCapturedExprDecl",
-  "rust_name": "OmpCapturedExprDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

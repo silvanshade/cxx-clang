@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/EnumDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::enum_decl",
+  "rust_name": "EnumDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

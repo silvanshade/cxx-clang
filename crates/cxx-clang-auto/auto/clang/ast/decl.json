@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl",
+  "rust_name": "Decl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

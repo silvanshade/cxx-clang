@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::tag_decl::TagDecl, gen::clang::ast::decl::enum_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::enum_decl::EnumDecl;
+pub use crate::auto::clang::ast::decl::enum_decl::EnumDecl;
 
 impl<'ctx> EnumDecl<'ctx> {
     #[inline]

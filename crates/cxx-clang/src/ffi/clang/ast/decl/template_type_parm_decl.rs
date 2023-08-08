@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::type_decl::TypeDecl, gen::clang::ast::decl::template_type_parm_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::template_type_parm_decl::TemplateTypeParmDecl;
+pub use crate::auto::clang::ast::decl::template_type_parm_decl::TemplateTypeParmDecl;
 
 impl<'ctx> TemplateTypeParmDecl<'ctx> {
     #[inline]

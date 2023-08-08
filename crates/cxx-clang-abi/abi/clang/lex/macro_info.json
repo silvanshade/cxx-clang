@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/Lex/MacroInfo.hxx",
-  "cxx_namespace": "cxx_clang::clang::lex::macro_info",
-  "rust_name": "MacroInfo",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

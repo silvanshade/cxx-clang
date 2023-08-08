@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypeDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypedefNameDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TypeDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TypedefNameDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::type_decl"]
         type TypeDecl<'ctx> = crate::ffi::clang::ast::decl::type_decl::TypeDecl<'ctx>;

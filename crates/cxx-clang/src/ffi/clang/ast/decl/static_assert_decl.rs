@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::static_assert_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::static_assert_decl::StaticAssertDecl;
+pub use crate::auto::clang::ast::decl::static_assert_decl::StaticAssertDecl;
 
 impl<'ctx> StaticAssertDecl<'ctx> {
     #[inline]

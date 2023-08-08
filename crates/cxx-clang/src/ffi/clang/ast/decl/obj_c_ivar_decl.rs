@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::field_decl::FieldDecl, gen::clang::ast::decl::obj_c_ivar_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_ivar_decl::ObjCIvarDecl;
+pub use crate::auto::clang::ast::decl::obj_c_ivar_decl::ObjCIvarDecl;
 
 impl<'ctx> ObjCIvarDecl<'ctx> {
     #[inline]

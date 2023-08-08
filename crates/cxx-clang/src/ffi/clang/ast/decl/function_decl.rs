@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::function_decl::FunctionDecl;
+pub use crate::auto::clang::ast::decl::function_decl::FunctionDecl;
 
 impl<'ctx> FunctionDecl<'ctx> {
     #[inline]

@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::var_decl::VarDecl, gen::clang::ast::decl::omp_captured_expr_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_captured_expr_decl::OmpCapturedExprDecl;
+pub use crate::auto::clang::ast::decl::omp_captured_expr_decl::OmpCapturedExprDecl;
 
 impl<'ctx> OmpCapturedExprDecl<'ctx> {
     #[inline]

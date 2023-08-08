@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::lifetime_extended_temporary_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::lifetime_extended_temporary_decl::LifetimeExtendedTemporaryDecl;
+pub use crate::auto::clang::ast::decl::lifetime_extended_temporary_decl::LifetimeExtendedTemporaryDecl;
 
 impl<'ctx> LifetimeExtendedTemporaryDecl<'ctx> {
     #[inline]

@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::function_decl::FunctionDecl, gen::clang::ast::decl::cxx_method_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::cxx_method_decl::CxxMethodDecl;
+pub use crate::auto::clang::ast::decl::cxx_method_decl::CxxMethodDecl;
 
 impl<'ctx> CxxMethodDecl<'ctx> {
     #[inline]

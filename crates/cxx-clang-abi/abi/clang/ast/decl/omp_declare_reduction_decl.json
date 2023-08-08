@@ -1,9 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/OMPDeclareReductionDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::omp_declare_reduction_decl",
-  "cxx_name": "OMPDeclareReductionDecl",
-  "rust_name": "OmpDeclareReductionDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

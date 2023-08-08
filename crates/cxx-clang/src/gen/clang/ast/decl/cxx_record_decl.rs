@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/CXXRecordDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/RecordDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/CXXRecordDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/RecordDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::cxx_record_decl"]
         #[cxx_name = "CXXRecordDecl"]

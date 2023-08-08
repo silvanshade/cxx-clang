@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::class_scope_function_specialization_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::class_scope_function_specialization_decl::ClassScopeFunctionSpecializationDecl;
+pub use crate::auto::clang::ast::decl::class_scope_function_specialization_decl::ClassScopeFunctionSpecializationDecl;
 
 impl<'ctx> ClassScopeFunctionSpecializationDecl<'ctx> {
     #[inline]

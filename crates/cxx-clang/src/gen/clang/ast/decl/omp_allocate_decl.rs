@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/OMPAllocateDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/OMPDeclarativeDirectiveDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/OMPAllocateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/OMPDeclarativeDirectiveDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::omp_allocate_decl"]
         #[cxx_name = "OMPAllocateDecl"]

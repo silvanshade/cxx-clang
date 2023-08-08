@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_requires_decl::OmpRequiresDecl;
+pub use crate::auto::clang::ast::decl::omp_requires_decl::OmpRequiresDecl;
 
 impl<'ctx> OmpRequiresDecl<'ctx> {
     #[inline]

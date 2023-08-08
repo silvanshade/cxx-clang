@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/UsingShadowDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::using_shadow_decl",
+  "rust_name": "UsingShadowDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

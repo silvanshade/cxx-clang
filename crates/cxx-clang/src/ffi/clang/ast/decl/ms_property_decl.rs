@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::declarator_decl::DeclaratorDecl, gen::clang::ast::decl::ms_property_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::ms_property_decl::MsPropertyDecl;
+pub use crate::auto::clang::ast::decl::ms_property_decl::MsPropertyDecl;
 
 impl<'ctx> MsPropertyDecl<'ctx> {
     #[inline]

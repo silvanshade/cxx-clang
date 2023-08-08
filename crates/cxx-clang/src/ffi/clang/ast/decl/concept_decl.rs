@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::template_decl::TemplateDecl, gen::clang::ast::decl::concept_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::concept_decl::ConceptDecl;
+pub use crate::auto::clang::ast::decl::concept_decl::ConceptDecl;
 
 impl<'ctx> ConceptDecl<'ctx> {
     #[inline]

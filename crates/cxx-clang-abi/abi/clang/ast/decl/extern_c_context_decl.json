@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ExternCContextDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::extern_c_context_decl",
-  "rust_name": "ExternCContextDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

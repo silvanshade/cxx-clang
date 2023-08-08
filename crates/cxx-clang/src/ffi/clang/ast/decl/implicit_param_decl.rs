@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::var_decl::VarDecl, gen::clang::ast::decl::implicit_param_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::implicit_param_decl::ImplicitParamDecl;
+pub use crate::auto::clang::ast::decl::implicit_param_decl::ImplicitParamDecl;
 
 impl<'ctx> ImplicitParamDecl<'ctx> {
     #[inline]

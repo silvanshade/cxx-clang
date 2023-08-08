@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Type.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::type",
+  "rust_name": "Type",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/TypedefDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::typedef_decl",
-  "rust_name": "TypedefDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

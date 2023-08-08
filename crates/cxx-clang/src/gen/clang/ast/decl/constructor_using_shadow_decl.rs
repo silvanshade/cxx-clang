@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ConstructorUsingShadowDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/UsingShadowDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ConstructorUsingShadowDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/UsingShadowDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::constructor_using_shadow_decl"]
         type ConstructorUsingShadowDecl<'ctx> =

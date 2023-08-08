@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ValueDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::value_decl",
-  "rust_name": "ValueDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

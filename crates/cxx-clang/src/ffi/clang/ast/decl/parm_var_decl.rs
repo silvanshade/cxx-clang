@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::var_decl::VarDecl, gen::clang::ast::decl::parm_var_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::parm_var_decl::ParmVarDecl;
+pub use crate::auto::clang::ast::decl::parm_var_decl::ParmVarDecl;
 
 impl<'ctx> ParmVarDecl<'ctx> {
     #[inline]

@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/BaseUsingDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::base_using_decl",
-  "rust_name": "BaseUsingDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

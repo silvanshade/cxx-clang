@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::value_decl::ValueDecl, gen::clang::ast::decl::template_param_object_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::template_param_object_decl::TemplateParamObjectDecl;
+pub use crate::auto::clang::ast::decl::template_param_object_decl::TemplateParamObjectDecl;
 
 impl<'ctx> TemplateParamObjectDecl<'ctx> {
     #[inline]

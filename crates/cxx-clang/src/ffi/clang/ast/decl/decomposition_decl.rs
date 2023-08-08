@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::var_decl::VarDecl, gen::clang::ast::decl::decomposition_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::decomposition_decl::DecompositionDecl;
+pub use crate::auto::clang::ast::decl::decomposition_decl::DecompositionDecl;
 
 impl<'ctx> DecompositionDecl<'ctx> {
     #[inline]

@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/UsingDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::using_decl",
+  "rust_name": "UsingDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

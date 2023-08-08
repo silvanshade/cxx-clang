@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/FunctionTemplateDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/RedeclarableTemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/FunctionTemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/RedeclarableTemplateDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::function_template_decl"]
         type FunctionTemplateDecl<'ctx> =

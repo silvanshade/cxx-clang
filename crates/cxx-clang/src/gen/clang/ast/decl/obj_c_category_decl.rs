@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCCategoryDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCContainerDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCCategoryDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCContainerDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::obj_c_category_decl"]
         type ObjCCategoryDecl<'ctx> = crate::ffi::clang::ast::decl::obj_c_category_decl::ObjCCategoryDecl<'ctx>;

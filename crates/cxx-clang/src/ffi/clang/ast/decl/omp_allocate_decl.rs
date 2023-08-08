@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_allocate_decl::OmpAllocateDecl;
+pub use crate::auto::clang::ast::decl::omp_allocate_decl::OmpAllocateDecl;
 
 impl<'ctx> OmpAllocateDecl<'ctx> {
     #[inline]

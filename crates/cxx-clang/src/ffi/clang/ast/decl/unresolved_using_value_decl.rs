@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::value_decl::ValueDecl, gen::clang::ast::decl::unresolved_using_value_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::unresolved_using_value_decl::UnresolvedUsingValueDecl;
+pub use crate::auto::clang::ast::decl::unresolved_using_value_decl::UnresolvedUsingValueDecl;
 
 impl<'ctx> UnresolvedUsingValueDecl<'ctx> {
     #[inline]

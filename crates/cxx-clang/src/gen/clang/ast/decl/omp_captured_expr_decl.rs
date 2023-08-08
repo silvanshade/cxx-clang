@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/OMPCapturedExprDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/VarDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/OMPCapturedExprDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/VarDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::omp_captured_expr_decl"]
         #[cxx_name = "OMPCapturedExprDecl"]

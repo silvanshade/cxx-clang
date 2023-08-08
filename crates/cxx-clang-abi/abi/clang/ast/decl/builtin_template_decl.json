@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/BuiltinTemplateDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::builtin_template_decl",
-  "rust_name": "BuiltinTemplateDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::empty_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::empty_decl::EmptyDecl;
+pub use crate::auto::clang::ast::decl::empty_decl::EmptyDecl;
 
 impl<'ctx> EmptyDecl<'ctx> {
     #[inline]

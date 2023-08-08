@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/CapturedDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::captured_decl",
+  "rust_name": "CapturedDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

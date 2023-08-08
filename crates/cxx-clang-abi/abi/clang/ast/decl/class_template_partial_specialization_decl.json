@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/ClassTemplatePartialSpecializationDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::class_template_partial_specialization_decl",
-  "rust_name": "ClassTemplatePartialSpecializationDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

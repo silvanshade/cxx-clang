@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::named_decl::NamedDecl, gen::clang::ast::decl::unresolved_using_if_exists_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::unresolved_using_if_exists_decl::UnresolvedUsingIfExistsDecl;
+pub use crate::auto::clang::ast::decl::unresolved_using_if_exists_decl::UnresolvedUsingIfExistsDecl;
 
 impl<'ctx> UnresolvedUsingIfExistsDecl<'ctx> {
     #[inline]

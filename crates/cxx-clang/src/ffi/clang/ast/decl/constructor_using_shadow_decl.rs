@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::constructor_using_shadow_decl::ConstructorUsingShadowDecl;
+pub use crate::auto::clang::ast::decl::constructor_using_shadow_decl::ConstructorUsingShadowDecl;
 
 impl<'ctx> ConstructorUsingShadowDecl<'ctx> {
     #[inline]

@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::template_decl::TemplateDecl, gen::clang::ast::decl::redeclarable_template_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::redeclarable_template_decl::RedeclarableTemplateDecl;
+pub use crate::auto::clang::ast::decl::redeclarable_template_decl::RedeclarableTemplateDecl;
 
 impl<'ctx> RedeclarableTemplateDecl<'ctx> {
     #[inline]

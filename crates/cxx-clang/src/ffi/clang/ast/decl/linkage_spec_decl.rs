@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::linkage_spec_decl::LinkageSpecDecl;
+pub use crate::auto::clang::ast::decl::linkage_spec_decl::LinkageSpecDecl;
 
 impl<'ctx> LinkageSpecDecl<'ctx> {
     #[inline]

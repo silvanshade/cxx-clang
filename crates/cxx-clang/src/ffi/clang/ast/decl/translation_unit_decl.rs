@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::translation_unit_decl::TranslationUnitDecl;
+pub use crate::auto::clang::ast::decl::translation_unit_decl::TranslationUnitDecl;
 
 impl<'ctx> TranslationUnitDecl<'ctx> {
     #[inline]

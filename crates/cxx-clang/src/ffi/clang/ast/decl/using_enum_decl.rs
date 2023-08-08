@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::base_using_decl::BaseUsingDecl, gen::clang::ast::decl::using_enum_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::using_enum_decl::UsingEnumDecl;
+pub use crate::auto::clang::ast::decl::using_enum_decl::UsingEnumDecl;
 
 impl<'ctx> UsingEnumDecl<'ctx> {
     #[inline]

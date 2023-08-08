@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::named_decl::NamedDecl, gen::clang::ast::decl::obj_c_property_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_property_decl::ObjCPropertyDecl;
+pub use crate::auto::clang::ast::decl::obj_c_property_decl::ObjCPropertyDecl;
 
 impl<'ctx> ObjCPropertyDecl<'ctx> {
     #[inline]

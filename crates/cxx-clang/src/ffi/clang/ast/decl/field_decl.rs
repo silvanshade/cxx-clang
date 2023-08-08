@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::declarator_decl::DeclaratorDecl, gen::clang::ast::decl::field_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::field_decl::FieldDecl;
+pub use crate::auto::clang::ast::decl::field_decl::FieldDecl;
 
 impl<'ctx> FieldDecl<'ctx> {
     #[inline]

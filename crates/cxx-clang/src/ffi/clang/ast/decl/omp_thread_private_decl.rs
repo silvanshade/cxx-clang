@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_thread_private_decl::OmpThreadPrivateDecl;
+pub use crate::auto::clang::ast::decl::omp_thread_private_decl::OmpThreadPrivateDecl;
 
 impl<'ctx> OmpThreadPrivateDecl<'ctx> {
     #[inline]

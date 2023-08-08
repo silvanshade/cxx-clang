@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::access_spec_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::access_spec_decl::AccessSpecDecl;
+pub use crate::auto::clang::ast::decl::access_spec_decl::AccessSpecDecl;
 
 impl<'ctx> AccessSpecDecl<'ctx> {
     #[inline]

@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/UnresolvedUsingValueDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::unresolved_using_value_decl",
-  "rust_name": "UnresolvedUsingValueDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

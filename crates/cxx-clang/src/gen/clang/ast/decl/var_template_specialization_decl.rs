@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/VarDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/VarTemplateSpecializationDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/VarDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/VarTemplateSpecializationDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::var_decl"]
         type VarDecl<'ctx> = crate::ffi::clang::ast::decl::var_decl::VarDecl<'ctx>;

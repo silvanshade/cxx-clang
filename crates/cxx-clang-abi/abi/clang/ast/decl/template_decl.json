@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/TemplateDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::template_decl",
-  "rust_name": "TemplateDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

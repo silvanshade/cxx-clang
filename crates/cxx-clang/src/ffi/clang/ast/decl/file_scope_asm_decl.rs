@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::file_scope_asm_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::file_scope_asm_decl::FileScopeAsmDecl;
+pub use crate::auto::clang::ast::decl::file_scope_asm_decl::FileScopeAsmDecl;
 
 impl<'ctx> FileScopeAsmDecl<'ctx> {
     #[inline]

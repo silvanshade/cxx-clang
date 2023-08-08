@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/EmptyDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::empty_decl",
+  "rust_name": "EmptyDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

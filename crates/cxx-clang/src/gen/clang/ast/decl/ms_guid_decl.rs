@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/MSGuidDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ValueDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/MSGuidDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ValueDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::ms_guid_decl"]
         #[cxx_name = "MSGuidDecl"]

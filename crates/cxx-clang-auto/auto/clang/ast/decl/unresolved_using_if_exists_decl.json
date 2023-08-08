@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/UnresolvedUsingIfExistsDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::unresolved_using_if_exists_decl",
+  "rust_name": "UnresolvedUsingIfExistsDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

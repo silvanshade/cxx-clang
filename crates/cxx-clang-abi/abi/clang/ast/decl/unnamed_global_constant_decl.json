@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/UnnamedGlobalConstantDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::unnamed_global_constant_decl",
-  "rust_name": "UnnamedGlobalConstantDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

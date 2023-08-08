@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/FriendTemplateDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::friend_template_decl",
-  "rust_name": "FriendTemplateDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/DecompositionDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/VarDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/DecompositionDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/VarDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::decomposition_decl"]
         type DecompositionDecl<'ctx> = crate::ffi::clang::ast::decl::decomposition_decl::DecompositionDecl<'ctx>;

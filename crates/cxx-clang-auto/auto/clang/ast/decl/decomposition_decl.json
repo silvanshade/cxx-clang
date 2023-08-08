@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/DecompositionDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::decomposition_decl",
+  "rust_name": "DecompositionDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

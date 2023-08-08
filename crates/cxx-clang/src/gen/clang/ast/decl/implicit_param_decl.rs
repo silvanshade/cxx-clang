@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ImplicitParamDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/VarDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ImplicitParamDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/VarDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::implicit_param_decl"]
         type ImplicitParamDecl<'ctx> = crate::ffi::clang::ast::decl::implicit_param_decl::ImplicitParamDecl<'ctx>;

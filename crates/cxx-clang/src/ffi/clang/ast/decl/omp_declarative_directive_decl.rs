@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::omp_declarative_directive_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_declarative_directive_decl::OmpDeclarativeDirectiveDecl;
+pub use crate::auto::clang::ast::decl::omp_declarative_directive_decl::OmpDeclarativeDirectiveDecl;
 
 impl<'ctx> OmpDeclarativeDirectiveDecl<'ctx> {
     #[inline]

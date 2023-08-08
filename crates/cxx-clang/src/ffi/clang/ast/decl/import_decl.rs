@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::import_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::import_decl::ImportDecl;
+pub use crate::auto::clang::ast::decl::import_decl::ImportDecl;
 
 impl<'ctx> ImportDecl<'ctx> {
     #[inline]

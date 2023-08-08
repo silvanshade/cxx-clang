@@ -1,0 +1,9 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/MSGuidDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::ms_guid_decl",
+  "cxx_name": "MSGuidDecl",
+  "rust_name": "MsGuidDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/TranslationUnitDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::translation_unit_decl",
-  "rust_name": "TranslationUnitDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

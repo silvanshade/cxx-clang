@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ConceptDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ConceptDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TemplateDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::concept_decl"]
         type ConceptDecl<'ctx> = crate::ffi::clang::ast::decl::concept_decl::ConceptDecl<'ctx>;

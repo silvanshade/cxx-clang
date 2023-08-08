@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TemplateParamObjectDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ValueDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TemplateParamObjectDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ValueDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::template_param_object_decl"]
         type TemplateParamObjectDecl<'ctx> =

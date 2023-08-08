@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::pragma_detect_mismatch_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::pragma_detect_mismatch_decl::PragmaDetectMismatchDecl;
+pub use crate::auto::clang::ast::decl::pragma_detect_mismatch_decl::PragmaDetectMismatchDecl;
 
 impl<'ctx> PragmaDetectMismatchDecl<'ctx> {
     #[inline]

@@ -198,7 +198,7 @@ use crate::{
     gen::clang::ast::decl,
 };
 
-pub use crate::{abi::clang::ast::decl::Decl, gen::clang::ast::decl::Kind};
+pub use crate::{auto::clang::ast::decl::Decl, gen::clang::ast::decl::Kind};
 
 impl<'ctx> Decl<'ctx> {
     #[inline]

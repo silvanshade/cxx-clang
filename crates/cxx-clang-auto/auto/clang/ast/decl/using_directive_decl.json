@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/UsingDirectiveDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::using_directive_decl",
+  "rust_name": "UsingDirectiveDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

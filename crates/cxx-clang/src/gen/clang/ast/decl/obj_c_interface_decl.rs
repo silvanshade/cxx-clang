@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCContainerDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCInterfaceDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCContainerDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCInterfaceDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::obj_c_container_decl"]
         type ObjCContainerDecl<'ctx> = crate::ffi::clang::ast::decl::obj_c_container_decl::ObjCContainerDecl<'ctx>;

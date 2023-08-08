@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/NamedDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ObjCPropertyDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/NamedDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ObjCPropertyDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::named_decl"]
         type NamedDecl<'ctx> = crate::ffi::clang::ast::decl::named_decl::NamedDecl<'ctx>;

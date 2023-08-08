@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::friend_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::friend_decl::FriendDecl;
+pub use crate::auto::clang::ast::decl::friend_decl::FriendDecl;
 
 impl<'ctx> FriendDecl<'ctx> {
     #[inline]

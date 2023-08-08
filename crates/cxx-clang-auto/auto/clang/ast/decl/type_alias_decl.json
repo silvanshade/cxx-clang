@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/TypeAliasDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::type_alias_decl",
+  "rust_name": "TypeAliasDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

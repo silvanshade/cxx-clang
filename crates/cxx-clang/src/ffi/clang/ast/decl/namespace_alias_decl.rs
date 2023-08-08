@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::named_decl::NamedDecl, gen::clang::ast::decl::namespace_alias_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::namespace_alias_decl::NamespaceAliasDecl;
+pub use crate::auto::clang::ast::decl::namespace_alias_decl::NamespaceAliasDecl;
 
 impl<'ctx> NamespaceAliasDecl<'ctx> {
     #[inline]

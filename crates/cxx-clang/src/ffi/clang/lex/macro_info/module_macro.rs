@@ -1,1 +1,1 @@
-pub use crate::abi::clang::lex::macro_info::module_macro::ModuleMacro;
+pub use crate::auto::clang::lex::macro_info::module_macro::ModuleMacro;

@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/BuiltinTemplateDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/NamedDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/BuiltinTemplateDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/NamedDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::builtin_template_decl"]
         type BuiltinTemplateDecl<'ctx> = crate::ffi::clang::ast::decl::builtin_template_decl::BuiltinTemplateDecl<'ctx>;

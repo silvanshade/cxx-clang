@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::named_decl::NamedDecl, gen::clang::ast::decl::obj_c_compatible_alias_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_compatible_alias_decl::ObjCCompatibleAliasDecl;
+pub use crate::auto::clang::ast::decl::obj_c_compatible_alias_decl::ObjCCompatibleAliasDecl;
 
 impl<'ctx> ObjCCompatibleAliasDecl<'ctx> {
     #[inline]

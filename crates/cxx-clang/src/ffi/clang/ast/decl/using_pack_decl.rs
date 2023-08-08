@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::named_decl::NamedDecl, gen::clang::ast::decl::using_pack_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::using_pack_decl::UsingPackDecl;
+pub use crate::auto::clang::ast::decl::using_pack_decl::UsingPackDecl;
 
 impl<'ctx> UsingPackDecl<'ctx> {
     #[inline]

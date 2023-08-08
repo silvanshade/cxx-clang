@@ -7,7 +7,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_declare_mapper_decl::OmpDeclareMapperDecl;
+pub use crate::auto::clang::ast::decl::omp_declare_mapper_decl::OmpDeclareMapperDecl;
 
 impl<'ctx> OmpDeclareMapperDecl<'ctx> {
     #[inline]

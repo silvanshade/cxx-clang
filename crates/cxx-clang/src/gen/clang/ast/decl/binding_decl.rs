@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/BindingDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ValueDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/BindingDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ValueDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::binding_decl"]
         type BindingDecl<'ctx> = crate::ffi::clang::ast::decl::binding_decl::BindingDecl<'ctx>;

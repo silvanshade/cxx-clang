@@ -3,7 +3,7 @@ pub(crate) mod module_macro;
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/Lex/MacroInfo.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/Lex/MacroInfo.hxx");
 
         // #[namespace = "cxx_clang::clang::lex::macro_info"]
         // type MacroInfo<'ctx> = crate::ffi::clang::lex::macro_info::MacroInfo<'ctx>;

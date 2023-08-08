@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/EnumDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TagDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/EnumDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TagDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::enum_decl"]
         type EnumDecl<'ctx> = crate::ffi::clang::ast::decl::enum_decl::EnumDecl<'ctx>;

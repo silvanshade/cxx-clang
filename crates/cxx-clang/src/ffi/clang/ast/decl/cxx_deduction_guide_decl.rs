@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::function_decl::FunctionDecl, gen::clang::ast::decl::cxx_deduction_guide_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::cxx_deduction_guide_decl::CxxDeductionGuideDecl;
+pub use crate::auto::clang::ast::decl::cxx_deduction_guide_decl::CxxDeductionGuideDecl;
 
 impl<'ctx> CxxDeductionGuideDecl<'ctx> {
     #[inline]

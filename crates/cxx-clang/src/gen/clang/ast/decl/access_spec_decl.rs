@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/AccessSpecDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/AccessSpecDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::access_spec_decl"]
         type AccessSpecDecl<'ctx> = crate::ffi::clang::ast::decl::access_spec_decl::AccessSpecDecl<'ctx>;

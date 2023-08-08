@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ClassTemplateSpecializationDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ClassTemplatePartialSpecializationDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ClassTemplateSpecializationDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ClassTemplatePartialSpecializationDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::class_template_partial_specialization_decl"]
         type ClassTemplatePartialSpecializationDecl<'ctx> = crate::ffi::clang::ast::decl::class_template_partial_specialization_decl::ClassTemplatePartialSpecializationDecl<'ctx>;

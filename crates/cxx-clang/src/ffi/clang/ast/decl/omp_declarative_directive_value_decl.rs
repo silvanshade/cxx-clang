@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::omp_declarative_directive_value_decl::OmpDeclarativeDirectiveValueDecl;
+pub use crate::auto::clang::ast::decl::omp_declarative_directive_value_decl::OmpDeclarativeDirectiveValueDecl;
 
 impl<'ctx> OmpDeclarativeDirectiveValueDecl<'ctx> {
     #[inline]

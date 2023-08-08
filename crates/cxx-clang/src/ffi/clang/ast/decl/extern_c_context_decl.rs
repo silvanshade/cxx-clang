@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::extern_c_context_decl::ExternCContextDecl;
+pub use crate::auto::clang::ast::decl::extern_c_context_decl::ExternCContextDecl;
 
 impl<'ctx> ExternCContextDecl<'ctx> {
     #[inline]

@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/AST/Decl/PragmaCommentDecl.hxx",
+  "cxx_namespace": "cxx_clang::clang::ast::decl::pragma_comment_decl",
+  "rust_name": "PragmaCommentDecl",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/ClassScopeFunctionSpecializationDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/ClassScopeFunctionSpecializationDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::class_scope_function_specialization_decl"]
         type ClassScopeFunctionSpecializationDecl<'ctx> = crate::ffi::clang::ast::decl::class_scope_function_specialization_decl::ClassScopeFunctionSpecializationDecl<'ctx>;

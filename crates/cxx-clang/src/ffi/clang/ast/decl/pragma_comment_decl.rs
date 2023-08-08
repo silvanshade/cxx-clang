@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::Decl, gen::clang::ast::decl::pragma_comment_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::pragma_comment_decl::PragmaCommentDecl;
+pub use crate::auto::clang::ast::decl::pragma_comment_decl::PragmaCommentDecl;
 
 impl<'ctx> PragmaCommentDecl<'ctx> {
     #[inline]

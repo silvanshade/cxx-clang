@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::typedef_name_decl::TypedefNameDecl, gen::clang::ast::decl::type_alias_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::type_alias_decl::TypeAliasDecl;
+pub use crate::auto::clang::ast::decl::type_alias_decl::TypeAliasDecl;
 
 impl<'ctx> TypeAliasDecl<'ctx> {
     #[inline]

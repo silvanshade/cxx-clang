@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_container_decl::ObjCContainerDecl;
+pub use crate::auto::clang::ast::decl::obj_c_container_decl::ObjCContainerDecl;
 
 impl<'ctx> ObjCContainerDecl<'ctx> {
     #[inline]

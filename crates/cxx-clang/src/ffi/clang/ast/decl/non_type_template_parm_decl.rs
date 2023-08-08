@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::non_type_template_parm_decl::NonTypeTemplateParmDecl;
+pub use crate::auto::clang::ast::decl::non_type_template_parm_decl::NonTypeTemplateParmDecl;
 
 impl<'ctx> NonTypeTemplateParmDecl<'ctx> {
     #[inline]

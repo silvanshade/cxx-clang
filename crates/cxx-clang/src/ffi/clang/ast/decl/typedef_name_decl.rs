@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::type_decl::TypeDecl, gen::clang::ast::decl::typedef_name_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::typedef_name_decl::TypedefNameDecl;
+pub use crate::auto::clang::ast::decl::typedef_name_decl::TypedefNameDecl;
 
 impl<'ctx> TypedefNameDecl<'ctx> {
     #[inline]

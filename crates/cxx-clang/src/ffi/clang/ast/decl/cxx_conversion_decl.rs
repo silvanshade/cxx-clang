@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::cxx_method_decl::CxxMethodDecl, gen::clang::ast::decl::cxx_conversion_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::cxx_conversion_decl::CxxConversionDecl;
+pub use crate::auto::clang::ast::decl::cxx_conversion_decl::CxxConversionDecl;
 
 impl<'ctx> CxxConversionDecl<'ctx> {
     #[inline]

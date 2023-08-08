@@ -1,8 +1,8 @@
 #[cxx::bridge]
 mod ffi {
     extern "C++" {
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/UnresolvedUsingTypenameDecl.hxx");
-        include!("cxx-clang-abi/cxx/include/clang/AST/Decl/TypeDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/UnresolvedUsingTypenameDecl.hxx");
+        include!("cxx-clang-auto/cxx/include/clang/AST/Decl/TypeDecl.hxx");
 
         #[namespace = "cxx_clang::clang::ast::decl::unresolved_using_typename_decl"]
         type UnresolvedUsingTypenameDecl<'ctx> =

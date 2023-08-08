@@ -1,9 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/CXXRecordDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::cxx_record_decl",
-  "cxx_name": "CXXRecordDecl",
-  "rust_name": "CxxRecordDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

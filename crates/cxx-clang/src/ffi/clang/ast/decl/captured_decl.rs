@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::captured_decl::CapturedDecl;
+pub use crate::auto::clang::ast::decl::captured_decl::CapturedDecl;
 
 impl<'ctx> CapturedDecl<'ctx> {
     #[inline]

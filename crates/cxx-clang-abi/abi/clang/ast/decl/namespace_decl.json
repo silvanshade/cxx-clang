@@ -1,8 +1,0 @@
-{
-  "cxx_include": "cxx-clang-abi/cxx/include/clang/AST/Decl/NamespaceDecl.hxx",
-  "cxx_namespace": "cxx_clang::clang::ast::decl::namespace_decl",
-  "rust_name": "NamespaceDecl",
-  "rust_lifetimes": {
-    "ctx": []
-  }
-}

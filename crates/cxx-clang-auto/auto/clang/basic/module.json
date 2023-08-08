@@ -1,0 +1,8 @@
+{
+  "cxx_include": "cxx-clang-auto/cxx/include/clang/Basic/Module.hxx",
+  "cxx_namespace": "cxx_clang::clang::basic::module",
+  "rust_name": "Module",
+  "rust_lifetimes": {
+    "ctx": []
+  }
+}

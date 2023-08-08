@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::cxx_method_decl::CxxMethodDecl, gen::clang::ast::decl::cxx_destructor_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::cxx_destructor_decl::CxxDestructorDecl;
+pub use crate::auto::clang::ast::decl::cxx_destructor_decl::CxxDestructorDecl;
 
 impl<'ctx> CxxDestructorDecl<'ctx> {
     #[inline]

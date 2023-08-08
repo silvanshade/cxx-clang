@@ -10,18 +10,18 @@ repository = "https://github.com/silvanshade/cxx-clang"
 debug = ["tracing"]
 
 [build-dependencies]
-cxx-clang-abi = { version = "0.0", path = "../cxx-clang-abi" }
+cxx-clang-auto = { version = "0.0", path = "../cxx-clang-auto" }
 cxx-clang-build = { version = "0.0", path = "../cxx-clang-build" }
-cxx-llvm-build = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
-cxx-llvm-build-common = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
+cxx-llvm-build = "0.0"
+cxx-llvm-build-common = "0.0"
 
 [dependencies]
 cxx = { version = "1.0", features = ["c++20"] }
-cxx-clang-abi = { version = "0.0", path = "../cxx-clang-abi" }
-cxx-llvm = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
-cxx-llvm-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-llvm" }
-cxx-memory = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
-cxx-memory-abi = { version = "0.0", git = "https://github.com/silvanshade/cxx-memory" }
+cxx-auto = "0.0"
+cxx-clang-auto = { version = "0.0", path = "../cxx-clang-auto" }
+cxx-llvm = "0.0"
+cxx-llvm-auto = "0.0"
+moveref = "0.0"
 tracing = { version = "0.1", optional = true }
 
 [dev-dependencies]

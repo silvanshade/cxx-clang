@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::obj_c_impl_decl::ObjCImplDecl, gen::clang::ast::decl::obj_c_implementation_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::obj_c_implementation_decl::ObjCImplementationDecl;
+pub use crate::auto::clang::ast::decl::obj_c_implementation_decl::ObjCImplementationDecl;
 
 impl<'ctx> ObjCImplementationDecl<'ctx> {
     #[inline]

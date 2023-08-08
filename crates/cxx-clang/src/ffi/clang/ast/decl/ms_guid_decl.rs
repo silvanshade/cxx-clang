@@ -1,7 +1,7 @@
 use crate::{ffi::clang::ast::decl::value_decl::ValueDecl, gen::clang::ast::decl::ms_guid_decl};
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::ms_guid_decl::MsGuidDecl;
+pub use crate::auto::clang::ast::decl::ms_guid_decl::MsGuidDecl;
 
 impl<'ctx> MsGuidDecl<'ctx> {
     #[inline]

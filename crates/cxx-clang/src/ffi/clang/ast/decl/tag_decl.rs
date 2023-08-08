@@ -4,7 +4,7 @@ use crate::{
 };
 use core::pin::Pin;
 
-pub use crate::abi::clang::ast::decl::tag_decl::TagDecl;
+pub use crate::auto::clang::ast::decl::tag_decl::TagDecl;
 
 impl<'ctx> TagDecl<'ctx> {
     #[inline]
