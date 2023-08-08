@@ -36,6 +36,7 @@ target_compile_options(cxx-clang-abi PUBLIC
   -Wno-deprecated-anon-enum-enum-conversion
   -Wno-deprecated-builtins
   -Wno-dollar-in-identifier-extension
+  -Wno-nested-anon-types
   -Wno-unused-parameter
   -fno-rtti # needed to avoid "undefined reference to `typeinfo for [...]`" errors
 )
