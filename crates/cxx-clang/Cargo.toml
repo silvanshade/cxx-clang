@@ -5,6 +5,7 @@ version = "0.0.0"
 authors = ["silvanshade <silvanshade@users.noreply.github.com>"]
 license = "Apache-2.0 WITH LLVM-exception"
 repository = "https://github.com/silvanshade/cxx-clang"
+description = "cxx-style FFI bindings to the Clang C++ API"
 
 [features]
 debug = ["tracing"]
