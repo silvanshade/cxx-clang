@@ -1,0 +1,46 @@
+# syntax=docker/dockerfile:1
+
+####
+
+FROM base-swift-project-artifacts:${TARGETARCH} as base-swift-project-artifacts-prepare
+LABEL stage=base-swift-project-artifacts-prepare
+
+ARG DEBIAN_FRONTEND="noninteractive"
+
+USER root
+RUN chown -R rust-user:rust-user /workspaces/swift-project
+
+####
+
+FROM base-swift-project-artifacts-prepare as chef-cxx-clang-prepare
+LABEL stage=chef-cxx-clang-prepare
+
+ARG DEBIAN_FRONTEND="noninteractive"
+
+USER rust-user
+WORKDIR /workspaces/cxx-clang
+COPY --chown=rust-user:rust-user . .
+RUN cargo chef prepare --recipe-path recipe.json
+
+####
+
+FROM base-swift-project-artifacts-prepare as chef-cxx-clang-cook
+LABEL stage=chef-cxx-clang-cook
+
+ARG DEBIAN_FRONTEND="noninteractive"
+
+USER root
+WORKDIR /workspaces/cxx-clang-target-cooked
+RUN apt -y install rsync
+RUN chown -R rust-user:rust-user /workspaces/cxx-clang-target-cooked
+
+USER rust-user
+WORKDIR /workspaces/cxx-clang
+COPY --from=chef-cxx-clang-prepare --chown=rust-user:rust-user /workspaces/cxx-clang/recipe.json recipe.json
+RUN \
+  cargo chef cook --recipe-path recipe.json && \
+  rsync --archive --remove-source-files /workspaces/cxx-clang/target/ /workspaces/cxx-clang-target-cooked && \
+  rm -rf /workspaces/cxx-clang/target
+
+USER rust-user
+WORKDIR /workspaces/cxx-clang
