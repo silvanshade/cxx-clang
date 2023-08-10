@@ -1,3 +1,1 @@
-pub fn process_artifacts() -> ::cxx_auto::BoxResult<()> {
-    Ok(())
-}
+include!(concat!(env!("OUT_DIR"), "/src/auto.rs"));
